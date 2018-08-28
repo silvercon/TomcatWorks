@@ -29,7 +29,6 @@ public class Request {
         }
         System.out.print(request.toString());
         uri = parseUri(request.toString());
-        System.out.print(uri);
     }
 
     private String parseUri(String requestString) {
