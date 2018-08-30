@@ -2,7 +2,6 @@ package com.ex03.connector.http;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Collection;
 import java.util.Locale;
 
 import javax.servlet.ServletOutputStream;
@@ -135,35 +134,5 @@ public class HttpResponseFacade implements HttpServletResponse {
 
     public void setStatus(int sc, String message) {
         response.setStatus(sc, message);
-    }
-
-    @Override
-    public String getContentType() {
-        return null;
-    }
-
-    @Override
-    public void setCharacterEncoding(String arg0) {
-
-    }
-
-    @Override
-    public String getHeader(String arg0) {
-        return null;
-    }
-
-    @Override
-    public Collection<String> getHeaderNames() {
-        return null;
-    }
-
-    @Override
-    public Collection<String> getHeaders(String arg0) {
-        return null;
-    }
-
-    @Override
-    public int getStatus() {
-        return 0;
     }
 }

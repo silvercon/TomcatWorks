@@ -110,13 +110,4 @@ public class Response implements ServletResponse {
 
     public void setLocale(Locale locale) {
     }
-
-    @Override
-    public String getContentType() {
-        return null;
-    }
-
-    @Override
-    public void setCharacterEncoding(String arg0) {
-    }
 }

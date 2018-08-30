@@ -67,14 +67,4 @@ public class ResponseFacade implements ServletResponse {
         response.setLocale(locale);
     }
 
-    @Override
-    public String getContentType() {
-        return null;
-    }
-
-    @Override
-    public void setCharacterEncoding(String arg0) {
-
-    }
-
 }

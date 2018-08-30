@@ -7,13 +7,9 @@ import java.util.Enumeration;
 import java.util.Locale;
 import java.util.Map;
 
-import javax.servlet.AsyncContext;
-import javax.servlet.DispatcherType;
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletInputStream;
 import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 
 public class RequestFacade implements ServletRequest {
 
@@ -123,61 +119,6 @@ public class RequestFacade implements ServletRequest {
     public void setCharacterEncoding(String encoding)
             throws UnsupportedEncodingException {
         request.setCharacterEncoding(encoding);
-    }
-
-    @Override
-    public AsyncContext getAsyncContext() {
-        return null;
-    }
-
-    @Override
-    public DispatcherType getDispatcherType() {
-        return null;
-    }
-
-    @Override
-    public String getLocalAddr() {
-        return null;
-    }
-
-    @Override
-    public String getLocalName() {
-        return null;
-    }
-
-    @Override
-    public int getLocalPort() {
-        return 0;
-    }
-
-    @Override
-    public int getRemotePort() {
-        return 0;
-    }
-
-    @Override
-    public ServletContext getServletContext() {
-        return null;
-    }
-
-    @Override
-    public boolean isAsyncStarted() {
-        return false;
-    }
-
-    @Override
-    public boolean isAsyncSupported() {
-        return false;
-    }
-
-    @Override
-    public AsyncContext startAsync() {
-        return null;
-    }
-
-    @Override
-    public AsyncContext startAsync(ServletRequest arg0, ServletResponse arg1) {
-        return null;
     }
 
 }
