@@ -41,7 +41,7 @@ public class HttpConnector implements Runnable {
                 continue;
             }
 
-            // Hand this socket off to an HttpProcessor
+            // 同步方法，阻塞在process()，必须等待process()返回后才会接收下一个socket
             HttpProcessor processor = new HttpProcessor(this);
             processor.process(socket);
 
